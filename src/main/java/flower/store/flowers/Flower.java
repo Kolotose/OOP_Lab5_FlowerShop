@@ -1,5 +1,7 @@
-package flower.store;
+package flower.store.flowers;
 
+import flower.store.FlowerColor;
+import flower.store.FlowerType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,12 +24,12 @@ public class Flower {
     public Flower() {
     }
 
-    public Flower(FlowerType flowerType, FlowerColor color) {
+    public Flower(FlowerColor color, FlowerType flowerType) {
         setFlowerType(flowerType);
         setColor(color);
     }
 
-    public Flower(FlowerType flowerType, FlowerColor color, double sepalLength) {
+    public Flower(FlowerColor color, double sepalLength, FlowerType flowerType) {
         setFlowerType(flowerType);
         setColor(color);
         setSepalLength(sepalLength);
